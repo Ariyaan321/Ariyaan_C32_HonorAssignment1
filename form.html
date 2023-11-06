@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+
+<body class="final">
+    <img class="plane" src="plane.png" alt="plane">
+    <div class="form">
+        <header class="head1">Book your Ticket</header>
+
+        <head>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+        <script src="validate.js"></script>
+
+        <form name="tour" id="tour" method="post" action="connect.php" onsubmit="return Validate()">
+            <p>Name:
+                <label class="space">
+                    <input class="form1" type="text" name="name" id="name" placeholder="Name" required>
+                </label>
+            </p>
+            <p>Email id:
+                <label class="space">
+                    <input class="email" type="email" name="email" id="email" placeholder="abc@rknec.edu">
+                </label>
+            </p>
+            <p>Gender:
+                <label>
+                    <input class="gender" id="gender" name="gnd" value="male" type="radio">male
+                    <input class="gender" id="gender" name="gnd" value="female" type="radio">female
+                </label>
+            </p>
+            <p>
+                Destination:
+                <label class="lab">
+                    <select name="city" class="city" id="city" required>
+                        <option value="NULL">places to visit</option>
+                        <option value="India">India </option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Dubai">Dubai</option>
+                    </select></label>
+            </p>
+
+            <p>
+                <label>
+                    <button type="submit" class="buttono" onclick="">Submit</button>
+                </label>
+            </p>
+            <p>
+                <label>
+
+                    <a href="Sql.php">Details of our tourists</button>
+                </label>
+            </p>
+    </div>
+    </form>
+</body>
+
+</html>
